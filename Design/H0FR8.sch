@@ -13675,9 +13675,9 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <attribute name="NAME" x="222.885" y="110.49" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="222.885" y="107.95" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="U3" gate="G$1" x="74.295" y="109.22" smashed="yes">
-<attribute name="NAME" x="69.215" y="115.062" size="1.778" layer="95"/>
-<attribute name="VALUE" x="69.215" y="99.06" size="1.778" layer="96"/>
+<instance part="U3" gate="G$1" x="111.76" y="89.535" smashed="yes">
+<attribute name="NAME" x="106.68" y="95.377" size="1.778" layer="95"/>
+<attribute name="VALUE" x="106.68" y="79.375" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
