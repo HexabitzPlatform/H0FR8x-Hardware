@@ -796,22 +796,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 </package>
-<package name="C-0805-POL" urn="urn:adsk.eagle:footprint:19666362/3" library_version="43">
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="39"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.0154875" y1="0.99568125" x2="-2.0154875" y2="-1.01726875" width="0.1524" layer="21"/>
-<wire x1="-0.3302" y1="0" x2="0.3302" y2="0" width="0.254" layer="21"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.27" y="1.27" size="1.016" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-</package>
 <package name="FB-0603" urn="urn:adsk.eagle:footprint:19666371/2" library_version="43">
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -908,16 +892,25 @@ In this library the device names are the same as the pin names of the symbols, t
 <smd name="1" x="-1.625" y="0" dx="1.006" dy="0.641" layer="1"/>
 <smd name="2" x="1.625" y="0" dx="1.006" dy="0.641" layer="1" roundness="100"/>
 </package>
+<package name="C-0603-POL" urn="urn:adsk.eagle:footprint:19666391/1" locally_modified="yes" library_version="67" library_locally_modified="yes">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-1.58" y1="0.97" x2="-1.58" y2="-0.98" width="0.127" layer="21"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<wire x1="-0.508" y1="0.0508" x2="0.4064" y2="0.0508" width="0.3048" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="R-0603" urn="urn:adsk.eagle:package:1435818/6" type="model" library_version="43">
 <packageinstances>
 <packageinstance name="R-0603"/>
-</packageinstances>
-</package3d>
-<package3d name="C-0805-POL" urn="urn:adsk.eagle:package:19666467/4" type="model" library_version="43">
-<packageinstances>
-<packageinstance name="C-0805-POL"/>
 </packageinstances>
 </package3d>
 <package3d name="FB-0603" urn="urn:adsk.eagle:package:19666458/5" type="model" library_version="43">
@@ -953,6 +946,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <packageinstance name="STMICROELECTRONICS_BAT46ZFILM_3"/>
 </packageinstances>
 </package3d>
+<package3d name="C-0603-POL" urn="urn:adsk.eagle:package:19666490/2" type="model" library_version="67" library_locally_modified="yes">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="C-0603-POL"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="R-0805" urn="urn:adsk.eagle:symbol:19857681/1" library_version="38" library_locally_modified="yes">
@@ -969,18 +968,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="C-0805-POL" urn="urn:adsk.eagle:symbol:19857688/1" library_version="38" library_locally_modified="yes">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
-<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
-<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 <symbol name="FB-0603" urn="urn:adsk.eagle:symbol:19857711/1" library_version="38" library_locally_modified="yes">
 <wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
@@ -1080,6 +1067,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <pin name="ANODE" x="-2.54" y="-5.08" visible="pad" length="middle" direction="pas"/>
 <pin name="CATHODE" x="12.7" y="-5.08" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="C-0603-POL" urn="urn:adsk.eagle:symbol:19857702/1" library_version="65">
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
+<rectangle x1="-1.793" y1="0.038" x2="-0.904" y2="0.165" layer="94"/>
+<rectangle x1="-1.412" y1="-0.343" x2="-1.285" y2="0.546" layer="94"/>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="R-0603" urn="urn:adsk.eagle:component:19857753/4" prefix="R" uservalue="yes" library_version="43">
@@ -1103,33 +1102,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="OCTOPART_URL" value="" constant="no"/>
 <attribute name="RESISTANCE" value="" constant="no"/>
 <attribute name="TOLERANCE" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="C-0805-POL" urn="urn:adsk.eagle:component:19857724/3" prefix="C" uservalue="yes" library_version="43">
-<description>Cap Tant Solid  SMD 2012</description>
-<gates>
-<gate name="G$1" symbol="C-0805-POL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="C-0805-POL">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:19666467/4"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CAPACITANCE" value="" constant="no"/>
-<attribute name="MFN" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OCTOPART_URL" value="" constant="no"/>
-<attribute name="TOLERANCE" value="" constant="no"/>
-<attribute name="VOLTAGE_RATING" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1294,6 +1266,32 @@ Source: &lt;a href="https://www.mouser.de/datasheet/2/87/eaton_movs4032_data_she
 <attribute name="MFN" value="STMicroelectronics"/>
 <attribute name="MPN" value="BAT46ZFILM"/>
 <attribute name="OCTOPART_URL" value="https://octopart.com/bat46zfilm-stmicroelectronics-658190?r=sp" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-0603-POL" urn="urn:adsk.eagle:component:19857734/2" library_version="67" library_locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="C-0603-POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C-0603-POL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:19666490/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CAPACITANCE" value="" constant="no"/>
+<attribute name="MFN" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OCTOPART_URL" value="" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VOLTAGE_RATING" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -7291,9 +7289,6 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <part name="C6" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="C-0603" device="" package3d_urn="urn:adsk.eagle:package:19666468/3" value="100nF"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="C-0805-POL" device="" package3d_urn="urn:adsk.eagle:package:19666467/4" value="4.7uF"/>
-<part name="C2" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="C-0805-POL" device="" package3d_urn="urn:adsk.eagle:package:19666467/4" value="1uF"/>
-<part name="C4" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="C-0805-POL" device="" package3d_urn="urn:adsk.eagle:package:19666467/4" value="4.7uF"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="FB1" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="FB-0603" device="" package3d_urn="urn:adsk.eagle:package:19666458/5"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VDD" device=""/>
@@ -7400,6 +7395,30 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <attribute name="RESISTANCE" value="110.0 Ω"/>
 <attribute name="TOLERANCE" value="±1%"/>
 </part>
+<part name="C3" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="C-0603-POL" device="" package3d_urn="urn:adsk.eagle:package:19666490/2" value="4.7uF">
+<attribute name="CAPACITANCE" value="4.7uF"/>
+<attribute name="MFN" value="Murata"/>
+<attribute name="MPN" value="GRM21BC81E475KA12L"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/grm21bc81e475ka12l-murata-10331911?r=sp&amp;s=RY3qZSD8T6mG6TC9CHI5qQ"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE_RATING" value="25V"/>
+</part>
+<part name="C2" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="C-0603-POL" device="" package3d_urn="urn:adsk.eagle:package:19666490/2" value="1uF">
+<attribute name="CAPACITANCE" value="1.00uF"/>
+<attribute name="MFN" value="Yageo"/>
+<attribute name="MPN" value="CC0805KKX7R7BB105"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/cc0805kkx7r7bb105-yageo-8376555?r=sp&amp;s=YKl1wwtkROau_X5nniH2ig"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE_RATING" value="16V"/>
+</part>
+<part name="C4" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="C-0603-POL" device="" package3d_urn="urn:adsk.eagle:package:19666490/2" value="4.7uF">
+<attribute name="CAPACITANCE" value="4.7uF"/>
+<attribute name="MFN" value="Murata"/>
+<attribute name="MPN" value="GRM21BC81E475KA12L"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/grm21bc81e475ka12l-murata-10331911?r=sp&amp;s=RY3qZSD8T6mG6TC9CHI5qQ"/>
+<attribute name="TOLERANCE" value="10%"/>
+<attribute name="VOLTAGE_RATING" value="25V"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7439,7 +7458,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <text x="38.735" y="191.135" size="1.778" layer="150">VDD=3.3 Volts</text>
 <text x="168.825" y="94.82" size="1.778" layer="95">Vref Coupling</text>
 <text x="199.305" y="94.82" size="1.778" layer="95">VDDIO2 Coupling</text>
-<text x="137.075" y="94.82" size="1.778" layer="95">VDD\VDDA Coupling</text>
+<text x="138.98" y="94.82" size="1.778" layer="95">VDDA Coupling</text>
 <text x="252.095" y="141.605" size="1.778" layer="95">BOOT</text>
 </plain>
 <instances>
@@ -7463,8 +7482,8 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <instance part="SUPPLY3" gate="G$1" x="234.95" y="128.905" smashed="yes">
 <attribute name="VALUE" x="238.125" y="133.985" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="128.905" y="167.005" smashed="yes">
-<attribute name="VALUE" x="131.445" y="172.085" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY4" gate="G$1" x="133.35" y="164.465" smashed="yes" rot="R90">
+<attribute name="VALUE" x="123.825" y="163.83" size="1.778" layer="96"/>
 </instance>
 <instance part="GND6" gate="1" x="113.03" y="133.35" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="114.3" y="130.81" size="1.778" layer="96" rot="MR0"/>
@@ -7476,14 +7495,14 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <attribute name="VALUE" x="101.6" y="151.765" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R" gate="G$1" x="104.14" y="146.05" smashed="yes" rot="R180">
-<attribute name="NAME" x="104.775" y="149.225" size="1.778" layer="95"/>
+<attribute name="NAME" x="100.965" y="145.415" size="1.778" layer="95"/>
 </instance>
-<instance part="GND2" gate="1" x="222.25" y="169.545" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="224.79" y="166.37" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND2" gate="1" x="222.25" y="172.085" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="225.425" y="174.625" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="R2" gate="G$1" x="252.095" y="129.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="250.5964" y="127.635" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="255.397" y="127" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="257.175" y="131.8514" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="257.81" y="129.032" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R1" gate="G$1" x="242.57" y="85.09" smashed="yes" rot="R270">
 <attribute name="NAME" x="244.475" y="85.3186" size="1.778" layer="95"/>
@@ -7494,8 +7513,8 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <attribute name="VALUE" x="133.985" y="69.088" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="113.03" y="139.065" smashed="yes">
-<attribute name="NAME" x="114.554" y="141.986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="114.554" y="137.541" size="1.778" layer="96"/>
+<attribute name="NAME" x="115.824" y="140.716" size="1.778" layer="95"/>
+<attribute name="VALUE" x="115.824" y="138.176" size="1.778" layer="96"/>
 </instance>
 <instance part="C7" gate="G$1" x="146.685" y="77.47" smashed="yes">
 <attribute name="NAME" x="143.129" y="80.391" size="1.778" layer="95"/>
@@ -7523,18 +7542,6 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 </instance>
 <instance part="GND3" gate="1" x="205.105" y="68.58" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="207.645" y="66.04" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="C3" gate="G$1" x="154.305" y="79.375" smashed="yes">
-<attribute name="NAME" x="155.321" y="80.01" size="1.778" layer="95"/>
-<attribute name="VALUE" x="155.321" y="75.184" size="1.778" layer="96"/>
-</instance>
-<instance part="C2" gate="G$1" x="182.88" y="79.375" smashed="yes">
-<attribute name="NAME" x="183.896" y="80.01" size="1.778" layer="95"/>
-<attribute name="VALUE" x="183.896" y="75.184" size="1.778" layer="96"/>
-</instance>
-<instance part="C4" gate="G$1" x="212.09" y="79.375" smashed="yes">
-<attribute name="NAME" x="213.106" y="80.01" size="1.778" layer="95"/>
-<attribute name="VALUE" x="213.106" y="75.184" size="1.778" layer="96"/>
 </instance>
 <instance part="GND5" gate="1" x="125.73" y="68.58" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="128.27" y="66.04" size="1.778" layer="96" rot="MR0"/>
@@ -7569,6 +7576,18 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="146.685" y="68.58" smashed="yes">
 <attribute name="VALUE" x="150.622" y="66.04" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C3" gate="G$1" x="154.305" y="80.01" smashed="yes" rot="MR0">
+<attribute name="NAME" x="159.639" y="80.645" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="163.449" y="77.089" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="C2" gate="G$1" x="182.88" y="80.01" smashed="yes" rot="MR0">
+<attribute name="NAME" x="186.944" y="80.645" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="188.214" y="75.819" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="C4" gate="G$1" x="212.09" y="80.01" smashed="yes" rot="MR0">
+<attribute name="NAME" x="217.424" y="80.645" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="219.329" y="75.184" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -7621,9 +7640,9 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="205.105" y1="82.55" x2="205.105" y2="85.09" width="0.1524" layer="91"/>
 <junction x="205.105" y="85.09"/>
-<pinref part="C4" gate="G$1" pin="+"/>
-<wire x1="212.09" y1="81.915" x2="212.09" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="82.55" x2="212.09" y2="85.09" width="0.1524" layer="91"/>
 <junction x="212.09" y="85.09"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7643,7 +7662,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="214.63" y1="172.085" x2="222.25" y2="172.085" width="0.1524" layer="91"/>
+<wire x1="214.63" y1="172.085" x2="219.71" y2="172.085" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="U1" gate="A" pin="EPAD"/>
 </segment>
@@ -7651,14 +7670,14 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="205.105" y1="71.12" x2="205.105" y2="72.39" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="205.105" y1="72.39" x2="205.105" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="212.09" y1="74.295" x2="212.09" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="74.93" x2="212.09" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="212.09" y1="72.39" x2="205.105" y2="72.39" width="0.1524" layer="91"/>
 <junction x="205.105" y="72.39"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="222.885" y1="72.39" x2="212.09" y2="72.39" width="0.1524" layer="91"/>
 <junction x="212.09" y="72.39"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -7710,7 +7729,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <wire x1="143.51" y1="159.385" x2="137.795" y2="159.385" width="0.1524" layer="91"/>
 <wire x1="137.795" y1="159.385" x2="137.795" y2="161.925" width="0.1524" layer="91"/>
 <wire x1="137.795" y1="161.925" x2="137.795" y2="164.465" width="0.1524" layer="91"/>
-<wire x1="137.795" y1="164.465" x2="128.905" y2="164.465" width="0.1524" layer="91"/>
+<wire x1="137.795" y1="164.465" x2="135.89" y2="164.465" width="0.1524" layer="91"/>
 <wire x1="143.51" y1="161.925" x2="137.795" y2="161.925" width="0.1524" layer="91"/>
 <junction x="137.795" y="161.925"/>
 <wire x1="143.51" y1="164.465" x2="137.795" y2="164.465" width="0.1524" layer="91"/>
@@ -7720,8 +7739,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <pinref part="U1" gate="A" pin="VDD/VDDA"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="+"/>
-<wire x1="154.305" y1="81.915" x2="154.305" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="154.305" y1="82.55" x2="154.305" y2="85.09" width="0.1524" layer="91"/>
 <wire x1="154.305" y1="85.09" x2="146.685" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="VDDA"/>
 <wire x1="146.685" y1="85.09" x2="146.685" y2="86.36" width="0.1524" layer="91"/>
@@ -7730,16 +7748,17 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <pinref part="FB1" gate="G$1" pin="2"/>
 <wire x1="143.51" y1="85.09" x2="146.685" y2="85.09" width="0.1524" layer="91"/>
 <wire x1="146.685" y1="85.09" x2="146.685" y2="82.55" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VDDA"/>
 <wire x1="175.895" y1="82.55" x2="175.895" y2="85.09" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="175.895" y1="85.09" x2="175.895" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="81.915" x2="182.88" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="82.55" x2="182.88" y2="85.09" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="85.09" x2="175.895" y2="85.09" width="0.1524" layer="91"/>
 <junction x="175.895" y="85.09"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VSSA" class="0">
@@ -7747,11 +7766,11 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <pinref part="SUPPLY6" gate="G$1" pin="AGND"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="175.895" y1="71.12" x2="175.895" y2="72.39" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="175.895" y1="72.39" x2="175.895" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="74.295" x2="182.88" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="74.93" x2="182.88" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="72.39" x2="175.895" y2="72.39" width="0.1524" layer="91"/>
 <junction x="175.895" y="72.39"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="USART2_TX" class="0">
@@ -7968,14 +7987,14 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="146.685" y1="71.12" x2="146.685" y2="72.39" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="-"/>
 <wire x1="146.685" y1="72.39" x2="146.685" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="154.305" y1="74.295" x2="154.305" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="154.305" y1="74.93" x2="154.305" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="154.305" y1="72.39" x2="146.685" y2="72.39" width="0.1524" layer="91"/>
 <junction x="146.685" y="72.39"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="141.605" y1="72.39" x2="146.685" y2="72.39" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="AGND"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
@@ -13989,7 +14008,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 </instance>
 <instance part="U2" gate="A" x="112.395" y="168.91" smashed="yes">
 <attribute name="NAME" x="119.7346" y="174.8536" size="2.083" layer="95" ratio="6"/>
-<attribute name="VALUE" x="111.4752" y="158.3436" size="2.083" layer="96" ratio="6"/>
+<attribute name="VALUE" x="113.3802" y="158.3436" size="2.083" layer="96" ratio="6"/>
 </instance>
 <instance part="U4" gate="G$1" x="107.315" y="70.485" smashed="yes">
 <attribute name="NAME" x="113.03" y="74.93" size="1.778" layer="95" align="center-left"/>
