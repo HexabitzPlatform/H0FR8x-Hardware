@@ -7419,6 +7419,14 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE_RATING" value="25V"/>
 </part>
+<part name="R15" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" deviceset="R-0603" device="" package3d_urn="urn:adsk.eagle:package:1435818/6" value="100k">
+<attribute name="MFN" value="Yageo"/>
+<attribute name="MPN" value="RC0603JR-070RL"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/crcw06032k40jnea-vishay-40298967"/>
+<attribute name="RESISTANCE" value="2400.0 Ω"/>
+<attribute name="TOLERANCE" value="±5%"/>
+</part>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14071,8 +14079,8 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <attribute name="NAME" x="60.96" y="118.5164" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="62.23" y="112.522" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND4" gate="1" x="77.47" y="102.87" smashed="yes">
-<attribute name="VALUE" x="74.93" y="100.33" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="77.47" y="97.79" smashed="yes">
+<attribute name="VALUE" x="74.93" y="95.25" size="1.778" layer="96"/>
 </instance>
 <instance part="C12" gate="G$1" x="71.755" y="129.54" smashed="yes">
 <attribute name="NAME" x="64.389" y="129.921" size="1.778" layer="95"/>
@@ -14118,6 +14126,13 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <instance part="R14" gate="G$1" x="53.975" y="120.65" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.705" y="122.7836" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.705" y="117.348" size="1.778" layer="96"/>
+</instance>
+<instance part="R15" gate="G$1" x="68.58" y="106.045" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.485" y="106.2736" size="1.778" layer="95"/>
+<attribute name="VALUE" x="70.485" y="104.013" size="1.778" layer="96"/>
+</instance>
+<instance part="GND13" gate="1" x="68.58" y="97.79" smashed="yes">
+<attribute name="VALUE" x="66.04" y="95.25" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14279,13 +14294,15 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <wire x1="67.31" y1="120.65" x2="68.58" y2="120.65" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="120.65" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <junction x="68.58" y="114.3"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="111.125" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="77.47" y1="109.22" x2="77.47" y2="105.41" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="109.22" x2="77.47" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="EMITTER"/>
@@ -14296,6 +14313,11 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="163.195" y1="57.15" x2="163.195" y2="59.69" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="100.965" x2="68.58" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
