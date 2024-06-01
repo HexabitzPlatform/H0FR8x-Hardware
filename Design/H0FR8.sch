@@ -7462,7 +7462,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <wire x1="168.91" y1="8.128" x2="214.63" y2="8.128" width="0.1524" layer="205"/>
 <wire x1="231.14" y1="18.288" x2="231.14" y2="22.86" width="0.1524" layer="205"/>
 <text x="242.6462" y="6.1722" size="1.9304" layer="100" font="vector">www.hexabitz.com</text>
-<text x="182.4228" y="11.2014" size="1.9304" layer="101" font="vector">AC Dimmer Module</text>
+<text x="182.4228" y="11.2014" size="1.9304" layer="101" font="vector">10A RMS AC Dimmer</text>
 <text x="38.735" y="191.135" size="1.778" layer="150">VDD=3.3 Volts</text>
 <text x="168.825" y="94.82" size="1.778" layer="95">Vref Coupling</text>
 <text x="199.305" y="94.82" size="1.778" layer="95">VDDIO2 Coupling</text>
@@ -13974,7 +13974,7 @@ Source: &lt;a href="https://toshiba.semicon-storage.com/info/docget.jsp?did=1411
 <text x="215.9" y="5.3848" size="1.9304" layer="100" font="vector">Sheet   of</text>
 <text x="199.4662" y="19.6342" size="1.9304" layer="100" font="vector">Title</text>
 <text x="180.9242" y="19.6342" size="1.9304" layer="102" font="vector">H0FR8</text>
-<text x="179.2478" y="11.2014" size="1.9304" layer="101" font="vector">AC Dimmer Module</text>
+<text x="179.2478" y="11.2014" size="1.9304" layer="101" font="vector">10A RMS AC Dimmer</text>
 <text x="206.3242" y="19.6342" size="1.9304" layer="101" font="vector">H0FR8_Frontend</text>
 <wire x1="168.91" y1="3.81" x2="168.91" y2="8.128" width="0.1524" layer="205"/>
 <wire x1="168.91" y1="8.128" x2="168.91" y2="18.288" width="0.1524" layer="205"/>

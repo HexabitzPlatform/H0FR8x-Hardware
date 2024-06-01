@@ -4255,19 +4255,19 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-20.79625" y="-15.24" size="1.27" layer="25" align="center"/>
 <attribute name="VALUE" x="-20.79625" y="-15.24" size="1.27" layer="27" align="center"/>
 </element>
-<element name="LOAD" library="HEXABITZ_CONNECTION_PARTS" library_urn="urn:adsk.eagle:library:20064553" package="1546111-2" package3d_urn="urn:adsk.eagle:package:19666461/4" value="" x="-20.955" y="-24.60625" smashed="yes">
-<attribute name="MFN" value="TE Connectivity" x="-20.955" y="-24.60625" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="1546111-2" x="-20.955" y="-24.60625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-27.395" y="-31.39625" size="1.016" layer="25"/>
-<attribute name="OCTOPART_URL" value="https://octopart.com/1546111-2-te+connectivity-40393355" x="-20.955" y="-24.60625" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-27.395" y="-32.80625" size="1.016" layer="27"/>
+<element name="LOAD" library="HEXABITZ_CONNECTION_PARTS" library_urn="urn:adsk.eagle:library:20064553" package="1546111-2" package3d_urn="urn:adsk.eagle:package:19666461/4" value="" x="8.73125" y="25.7175" smashed="yes">
+<attribute name="MFN" value="TE Connectivity" x="8.73125" y="25.7175" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="1546111-2" x="8.73125" y="25.7175" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.29125" y="18.9275" size="1.016" layer="25"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/1546111-2-te+connectivity-40393355" x="8.73125" y="25.7175" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="2.29125" y="17.5175" size="1.016" layer="27"/>
 </element>
-<element name="AC_MAINS" library="HEXABITZ_CONNECTION_PARTS" library_urn="urn:adsk.eagle:library:20064553" package="1546111-2" package3d_urn="urn:adsk.eagle:package:19666461/4" value="" x="-20.955" y="-36.03625" smashed="yes">
-<attribute name="MFN" value="TE Connectivity" x="-20.955" y="-36.03625" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="1546111-2" x="-20.955" y="-36.03625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-25.01375" y="13.8475" size="1.016" layer="25"/>
-<attribute name="OCTOPART_URL" value="https://octopart.com/1546111-2-te+connectivity-40393355" x="-20.955" y="-36.03625" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-27.395" y="-44.23625" size="1.016" layer="27"/>
+<element name="AC_MAINS" library="HEXABITZ_CONNECTION_PARTS" library_urn="urn:adsk.eagle:library:20064553" package="1546111-2" package3d_urn="urn:adsk.eagle:package:19666461/4" value="" x="-2.54" y="25.7175" smashed="yes">
+<attribute name="MFN" value="TE Connectivity" x="-2.54" y="25.7175" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="1546111-2" x="-2.54" y="25.7175" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-6.59875" y="75.60125" size="1.016" layer="25"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/1546111-2-te+connectivity-40393355" x="-2.54" y="25.7175" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-8.98" y="17.5175" size="1.016" layer="27"/>
 </element>
 <element name="R12" library="HEXABITZ_RCLS" library_urn="urn:adsk.eagle:library:20064561" package="R-0603" package3d_urn="urn:adsk.eagle:package:1435818/6" value="100" x="-6.985" y="-15.24" smashed="yes">
 <attribute name="MFN" value="" x="-6.985" y="-15.24" size="1.778" layer="27" display="off"/>
@@ -4829,8 +4829,8 @@ design rules under a new name.</description>
 <contactref element="AC_MAINS" pad="1"/>
 <contactref element="LOAD" pad="1"/>
 <contactref element="R10" pad="2"/>
-<wire x1="-23.495" y1="-36.03625" x2="-5.5" y2="-29.36875" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.495" y1="-24.60625" x2="-23.495" y2="-36.03625" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.08" y1="25.7175" x2="-5.5" y2="-29.36875" width="0" layer="19" extent="1-1"/>
+<wire x1="6.19125" y1="25.7175" x2="-5.08" y2="25.7175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AC_MAINS_N">
 <contactref element="AC_MAINS" pad="2"/>
@@ -4841,8 +4841,8 @@ design rules under a new name.</description>
 <contactref element="RV1" pad="2"/>
 <contactref element="C11" pad="2"/>
 <contactref element="R11" pad="2"/>
-<wire x1="-18.415" y1="-36.03625" x2="-23.28" y2="6.50875" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.135" y1="-19.84375" x2="-18.415" y2="-36.03625" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="25.7175" x2="-23.28" y2="6.50875" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.135" y1="-19.84375" x2="0" y2="25.7175" width="0" layer="19" extent="1-1"/>
 <wire x1="1.32625" y1="-15.08125" x2="-6.135" y2="-19.84375" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.59625" y1="-15.24" x2="-6.135" y2="-19.84375" width="0" layer="19" extent="1-1"/>
 <wire x1="-16.725" y1="-7.46125" x2="-16.59625" y2="-15.24" width="0" layer="19" extent="1-1"/>
@@ -4856,8 +4856,8 @@ design rules under a new name.</description>
 <contactref element="RV1" pad="1"/>
 <contactref element="R13" pad="2"/>
 <wire x1="-6.135" y1="-15.24" x2="18.63" y2="-3.33375" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.415" y1="-24.60625" x2="-6.135" y2="-15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.99625" y1="-15.24" x2="-18.415" y2="-24.60625" width="0" layer="19" extent="1-1"/>
+<wire x1="11.27125" y1="25.7175" x2="-6.135" y2="-15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.99625" y1="-15.24" x2="11.27125" y2="25.7175" width="0" layer="19" extent="1-1"/>
 <wire x1="0" y1="8.92175" x2="-24.99625" y2="-15.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TRIAC_G">
