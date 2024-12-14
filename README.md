@@ -1,2 +1,2 @@
 # H0FR8x-Hardware
-Hexabitz Triac Dimmer Switch Module Hardware Design
+Hexabitz AC Dimmer Module Hardware Design
